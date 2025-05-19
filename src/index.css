@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Base Noir Colors */
+  --color-background: #0F0F15;       /* Deep space black */
+  --color-surface: #1E1E2C;         /* Slightly lighter card bg */
+  --color-elevated: #2D2D3A;        /* Floating elements */
+  --color-text: #E0E0E8;            /* Bright silver text */
+  --color-text-muted: #A0A1AA;      /* Secondary text */
+  
+  /* Neon Accents */
+  --color-primary: #FF2A6D;         /* Cyber pink (main CTA) */
+  --color-secondary: #05D9E8;       /* Electric blue */
+  --color-accent: #D300C5;          /* Psychedelic purple */
+  --color-extra: #B2FF59;           /* Toxic green */
+  
+  /* Utility Colors */
+  --color-success: #00F5A0;         /* Neon teal */
+  --color-warning: #FF9A00;         /* Amber glow */
+  --color-error: #FF3864;           /* Hot pink error */
+  
+  /* Font */
+  --font-poppins: "Poppins", sans-serif;
+}
