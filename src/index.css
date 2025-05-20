@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* Base Noir Colors */
-  --color-background: #0F0F15;       /* Deep space black */
-  --color-surface: #1E1E2C;         /* Slightly lighter card bg */
-  --color-elevated: #2D2D3A;        /* Floating elements */
-  --color-text: #E0E0E8;            /* Bright silver text */
-  --color-text-muted: #A0A1AA;      /* Secondary text */
-  
-  /* Neon Accents */
-  --color-primary: #FF2A6D;         /* Cyber pink (main CTA) */
-  --color-secondary: #05D9E8;       /* Electric blue */
-  --color-accent: #D300C5;          /* Psychedelic purple */
-  --color-extra: #B2FF59;           /* Toxic green */
-  
+  /* Base Neutral Colors */
+  --color-background: #0D1117;       /* Very dark gray */
+  --color-surface: #161B22;          /* Card or modal background */
+  --color-elevated: #21262D;         /* Elevated elements */
+  --color-text: #C9D1D9;             /* Light gray for readability */
+  --color-text-muted: #8B949E;       /* Muted gray */
+
+  /* Brand Accents */
+  --color-primary: #6366F1;          /* Tailwind indigo-500 */
+  --color-secondary: #22D3EE;        /* Tailwind cyan-400 */
+  --color-accent: #F472B6;           /* Tailwind pink-400 */
+  --color-extra: #10B981;            /* Tailwind emerald-500 */
+
   /* Utility Colors */
-  --color-success: #00F5A0;         /* Neon teal */
-  --color-warning: #FF9A00;         /* Amber glow */
-  --color-error: #FF3864;           /* Hot pink error */
+  --color-success: #22C55E;          /* Tailwind green-500 */
+  --color-warning: #FACC15;          /* Tailwind yellow-400 */
+  --color-error: #EF4444;            /* Tailwind red-500 */
   
   /* Font */
   --font-poppins: "Poppins", sans-serif;
 }
+
