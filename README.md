@@ -1,54 +1,96 @@
-# Cosmo Stack
+Certainly. Below is an updated `README.md` reflecting the inclusion of **Bun** as the primary package manager and runtime, along with other essential technologies used in your **CosmoStack** starter template.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🌌 CosmoStack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CosmoStack is a modern, opinionated React starter template engineered for building scalable, performant, and maintainable frontend applications. It leverages a curated selection of best-in-class tools and libraries, optimized for developer productivity and type safety.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+- ⚛  **React** – Declarative UI library
+- 🧠 **TypeScript** – Static typing for safer, scalable code
+- 🔁 **React Router v6+** – Modern client-side routing with nested layouts
+- 📡 **TanStack Query (React Query)** – Data fetching and caching
+- 🎨 **Tailwind CSS v4** – Utility-first CSS for rapid UI development
+- **Bun** – All-in-one JavaScript runtime with built-in bundler
+
+
+
+<!-- ## 🚀 Features
+
+- Minimal boilerplate with a clean and modular file structure.
+- Type-safe integrations across all layers of the application.
+- Fully configured routing and data-fetching mechanisms.
+- Tailwind CSS v4 for scalable, responsive UI design.
+- Bun support for superior development performance and DX.
+
+--- -->
+
+## 📁 Directory Structure
+
+```
+src/
+├── components/        # Shared and reusable UI components
+├── pages/             # Route-based page components
+├── layouts/           # UI layout components
+├── hooks/             # Custom React hooks
+├── lib/               # API utilities and fetch logic
+├── router/            # Router configuration
+└── main.tsx           # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1. Prerequisites
+
+Ensure you have [Bun](https://bun.sh/) installed globally:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+````
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/yeasinat/CosmoStack.git
+cd CosmoStack
 ```
+
+### 3. Install Dependencies
+
+```bash
+bun install
+```
+
+### 4. Start Development Server
+
+```bash
+bun dev
+```
+
+<!-- > The `dev` script runs Vite's development server with hot module replacement. -->
+
+
+## 📦 Build for Production
+
+```bash
+bun run build
+```
+
+<!-- > This command builds the application using Vite’s production optimization pipeline. -->
+
+---
+
+## 🧪 Planned Enhancements
+
+* Centralized API abstraction layer.
+* Authentication and protected route logic.
+* State management integration (e.g., Zustand).
+* Continuous Integration and Deployment workflows (CI/CD).
+* Automated testing framework (unit and end-to-end testing).
+
+
