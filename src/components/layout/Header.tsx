@@ -3,7 +3,7 @@ import { Link } from "react-router"
 
 const Header = () => {
   return (
-     <header className="bg-surface text-white shadow-md">
+     <header className="bg-surface shadow-md">
       <nav className="container mx-auto px-4 py-4">
         <ul className="flex space-x-6">
           <li>
